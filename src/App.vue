@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Features from "./components/Features.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
 </script>
@@ -7,6 +8,7 @@ import Navbar from "./components/Navbar.vue";
   <div class="p-4">
     <Navbar />
     <Hero />
+    <Features />
   </div>
 </template>
 
