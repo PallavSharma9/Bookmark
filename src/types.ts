@@ -10,3 +10,9 @@ export interface FeaturePanel {
   description: string;
   image: string;
 }
+
+export interface Questions {
+  title: string;
+  current: boolean;
+  description: string;
+}

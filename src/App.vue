@@ -3,6 +3,7 @@ import Browsers from "./components/Browsers.vue";
 import Features from "./components/Features.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
+import Questions from "./components/Questions.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Navbar from "./components/Navbar.vue";
     <Hero />
     <Features />
     <Browsers />
+    <Questions />
   </div>
 </template>
 
