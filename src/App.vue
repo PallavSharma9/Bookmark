@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Browsers from "./components/Browsers.vue";
 import Features from "./components/Features.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
@@ -9,6 +10,7 @@ import Navbar from "./components/Navbar.vue";
     <Navbar />
     <Hero />
     <Features />
+    <Browsers />
   </div>
 </template>
 
