@@ -39,7 +39,7 @@ const selectedPanel = computed<FeaturePanel>(() => {
 
 <template>
   <section>
-    <h1 class="text-4xl text-center font-bold mb-8">Features</h1>
+    <h1 class="mt-10 text-4xl text-center font-bold mb-8">Features</h1>
     <p class="font-medium text-zinc-400 w-sm text-center mx-auto mb-10">
       Our aim is to make it quick ad easy for you to access your favourite
       websites. Your bookmarks sync between your devices so you can access them

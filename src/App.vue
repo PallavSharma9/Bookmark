@@ -1,22 +1,15 @@
 <script setup lang="ts">
-import Browsers from "./components/Browsers.vue";
-import Contactus from "./components/Contactus.vue";
-import Features from "./components/Features.vue";
 import Footer from "./components/Footer.vue";
-import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
-import Questions from "./components/Questions.vue";
+
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <div class="p-4">
+  <div class="px-4">
     <Navbar />
-    <Hero />
-    <Features />
-    <Browsers />
-    <Questions />
   </div>
-  <Contactus />
+  <RouterView />
   <Footer />
 </template>
 

@@ -10,11 +10,13 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div class="flex justify-between items-center">
+  <div class="mt-10 flex justify-between items-center">
     <!-- Logo  -->
-    <img src="../../public/images/logo-bookmark.svg" alt="logo" />
+    <RouterLink to="/">
+      <img src="../../public/images/logo-bookmark.svg" alt="logo" />
+    </RouterLink>
 
-    <button class="text-2xl md:hidden z-50" @click="toggleMenu">
+    <button class="text-2xl md:hidden z-50" cursor-pointer @click="toggleMenu">
       <i v-if="!isOpen" class="fa-solid fa-bars"></i>
       <i v-else class="fa-solid fa-xmark"></i>
     </button>
@@ -26,19 +28,17 @@ const toggleMenu = () => {
       <RouterLink to="/features" class="hover:text-orange-700 text-center"
         >Features</RouterLink
       >
-      <RouterLink to="/features" class="hover:text-orange-700"
+      <RouterLink to="/downloads" class="hover:text-orange-700"
         >downloads</RouterLink
       >
-      <RouterLink to="/features" class="hover:text-orange-700">faq</RouterLink>
-      <RouterLink to="/features" class="hover:text-orange-700"
-        >Login</RouterLink
-      >
+      <RouterLink to="/faq" class="hover:text-orange-700">faq</RouterLink>
+      <RouterLink to="/" class="hover:text-orange-700">Login</RouterLink>
     </div>
 
     <!-- Mobile Menu Overlay  -->
     <div
       v-if="isOpen"
-      class="fixed inset-0 bg-white/80 flex flex-col items-center justify-center space-y-10 uppercase tracking-widest md:hidden text-xl"
+      class="fixed inset-0 bg-white/95 flex flex-col items-center justify-center space-y-10 uppercase tracking-widest md:hidden text-xl"
     >
       <RouterLink
         class="hover:text-2xl hover:text-orange-600"

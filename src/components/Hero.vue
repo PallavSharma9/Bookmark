@@ -1,5 +1,5 @@
 <template>
-  <section class="my-20">
+  <section class="mt-20">
     <div
       class="flex flex-col justify-center items-center lg:flex-row-reverse lg:space-x-20"
     >
